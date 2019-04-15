@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="10dp"
+        android:src="@drawable/ic_announce_picture"
+        android:id="@+id/dicuss_content_message_image"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/dicuss_content_message_date"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#969696"
+        android:id="@+id/dicuss_content_message_numbername"
+        android:layout_toRightOf="@+id/dicuss_content_message_image"
+        android:text="鄰居"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/dicuss_content_message_image"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#969696"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/dicuss_content_message_numbername"
+        android:id="@+id/dicuss_content_message_count"
+        android:text="B1,"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/dicuss_content_message_count"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#969696"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/dicuss_content_message_numbername"
+        android:id="@+id/dicuss_content_message_date"
+        android:text="昨天 16.24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+
+        android:background="@drawable/ic_delete2"
+        android:id="@+id/update_diciss_message_manager_button"
+        android:textSize="0sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="40dp"
+        android:layout_alignTop="@+id/dicuss_content_title"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/dicuss_content_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dicuss_content_message_date"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="FICK"
+        android:textColor="#1a1919"
+        android:textSize="18sp" />
+
+</RelativeLayout>

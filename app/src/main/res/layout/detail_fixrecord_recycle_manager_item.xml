@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        card_view:cardCornerRadius="16dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/package_rectcle_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:elevation="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_detail1"
+                android:id="@+id/package_recycle_item_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="維修紀錄"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/package_recycle_item_imageView"
+                android:id="@+id/package_recycle_packagetoRightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#595959"
+                android:layout_below="@id/package_recycle_item_imageView"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/package_recycle_item_div1" />
+
+            <TextView
+                android:layout_below="@+id/package_recycle_item_div1"
+                android:textSize="15sp"
+                android:textColor="#3918b3"
+                android:text="住戶 : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_numbername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/package_recycle_item_div1"
+                android:textSize="15sp"
+                android:textColor="#3918b3"
+                android:text="A棟一樓"
+                android:layout_toRightOf="@+id/detail_fixrecord_recycle_item_numbername"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_numbernametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_numbernametext"
+                android:textSize="15sp"
+                android:textColor="#3918b3"
+                android:text="狀態 : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_staus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_numbernametext"
+                android:textSize="15sp"
+                android:textColor="#3918b3"
+                android:text="未處理"
+                android:layout_toRightOf="@+id/detail_fixrecord_recycle_item_staus"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_staustext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_staus"
+                android:textSize="15sp"
+                android:textColor="#3918b3"
+                android:text="地點 : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_splace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_staus"
+                android:textSize="15sp"
+                android:textColor="#3918b3"
+                android:text="庭院"
+                android:layout_toRightOf="@+id/detail_fixrecord_recycle_item_splace"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_splacetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_splace"
+                android:textSize="15sp"
+                android:textColor="#e10000"
+                android:text="詳述 : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_splace"
+                android:textSize="15sp"
+                android:textColor="#e10000"
+                android:text="F1555"
+                android:layout_toRightOf="@+id/detail_fixrecord_recycle_item_splace"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_contenttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="25"
+                />
+
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_contenttext"
+                android:textSize="15sp"
+                android:textColor="#34017b"
+                android:text="申請時間 : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_replydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/detail_fixrecord_recycle_item_contenttext"
+                android:textSize="15sp"
+                android:textColor="#34017b"
+                android:text="A棟-1F-13"
+                android:layout_toRightOf="@+id/detail_fixrecord_recycle_item_replydate"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_replydatetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#595959"
+                android:layout_below="@id/detail_fixrecord_recycle_item_replydatetext"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/package_recycle_item_div2" />
+
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/package_recycle_item_div2"
+                android:textSize="15sp"
+                android:textColor="#a1a1a1"
+                android:text="2017/02/19 10:00:23"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_fixrecord_recycle_item_systemtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/holder_Catch_TO_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:id="@+id/detail_fixrecord_recycle_item_image"
+                android:layout_alignBottom="@+id/package_recycle_item_div2"
+                android:src="@mipmap/home_picture3"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/detail_fixrecord_recycle_item_numbernametext"
+                android:layout_width="100dp"
+                android:layout_marginRight="35dp"
+                android:layout_height="130dp" />
+
+
+            <!--<Button-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_below="@id/package_recycle_item_div2"-->
+                <!--android:id="@+id/package_recycle_item_Button_addupdata"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_height="23dp"-->
+                <!--android:layout_marginLeft="18dp"-->
+                <!--android:background="@drawable/button_rounde"-->
+                <!--android:gravity="center"-->
+                <!--android:text=" 管理  "-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="18sp" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fixid"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

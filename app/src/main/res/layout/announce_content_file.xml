@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/toolbar_Announcement_cotent_Id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/Announcement_cotent"
+        android:background="#415266">
+    </android.support.v7.widget.Toolbar>
+
+
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_below="@+id/toolbar_Announcement_cotent_Id"
+            android:id="@+id/announcement_title_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textColor="#9b9b9b"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="標題 : "
+                android:id="@+id/announce_content_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/announce_content_title1"
+                android:textColor="#4b4b4b"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="hello"
+                android:id="@+id/announce_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/announcement_title_relative"
+            android:id="@+id/announcementcontent_div"
+            android:backgroundTint="#d1d1d1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="#595959" />
+
+        <RelativeLayout
+            android:layout_below="@+id/announcementcontent_div"
+            android:id="@+id/announcement_title_relative2"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/announce_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="內容 : "
+                android:textColor="#9b9b9b"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/announce_content1"
+                android:id="@+id/announce_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:textColor="#4b4b4b"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <Button
+                android:text=""
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/announce_content"
+                android:id="@+id/announce_content_file"
+                android:background="@drawable/message_button_style"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

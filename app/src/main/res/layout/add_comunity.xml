@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="加入社區"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addtv_newaccount"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="加入社區："
+                android:layout_width="wrap_content"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_height="wrap_content"
+                android:id="@+id/addtv_born"
+                android:textSize="24sp" />
+
+            <EditText
+                android:focusable="false"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/addet_com"
+                android:hint="不可為空白！"
+                android:layout_width="134dp"
+                android:layout_weight="73.65" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addadd_creat_comunity_serachbutton"
+            android:text="搜尋社區"
+            android:drawableLeft="@drawable/ic_search4"
+            android:background="@drawable/login_button_style" />
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#d6d6d6"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.70">
+
+            <TextView
+                android:text="姓名："
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addtv_name"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <EditText
+                android:layout_width="134dp"
+                android:layout_height="62dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:id="@+id/addet_name"
+                android:layout_weight="1.03"
+                android:maxLength="8"
+                android:hint="請输入真實姓名！" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="手機："
+                android:layout_height="wrap_content"
+                android:id="@+id/addtv_cellphone"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_width="87dp" />
+
+            <EditText
+                android:layout_height="56dp"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:ems="10"
+                android:id="@+id/addet_cellphone"
+                android:digits="0123456789"
+                android:hint="不可為空白！"
+                android:maxLength="10"
+                android:layout_weight="0.01"
+                android:layout_width="134dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="地址："
+                android:layout_height="wrap_content"
+                android:id="@+id/addtv_address"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_weight="0.00"
+                android:layout_width="87dp" />
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:id="@+id/addet_address"
+                android:layout_weight="0.01"
+                android:maxLength="50"
+                android:hint="請輸入正確地址 謝謝！" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="電子郵件："
+                android:layout_height="wrap_content"
+                android:id="@+id/addtv_email"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_width="wrap_content" />
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/addet_email"
+                android:hint="不可為空白！"
+                android:digits="_.0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@"
+                android:layout_width="134dp"
+                android:layout_weight="73.65" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/addcreat_com_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_button_style"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="加入社區"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fcfcfc"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <android.support.v7.widget.Toolbar
+                    app:title="   "
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:theme="@style/toolBar3"
+                    android:id="@+id/packge_look_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:titleTextColor="@android:color/white"
+                    android:background="#415266">
+                </android.support.v7.widget.Toolbar>
+
+                <ImageView
+
+                    android:src="@drawable/ic_update"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/packge_look_toolbar"
+                    android:id="@+id/package_look_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

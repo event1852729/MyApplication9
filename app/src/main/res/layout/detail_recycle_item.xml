@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_detail1"
+        android:id="@+id/detail_recycle_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@+id/detail_recycle_image"
+        android:textColor="#2e2e2e"
+        android:id="@+id/detail_record_recycle_item_detail_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:text="社區紀錄"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:textColor="#737272"
+        android:id="@+id/detail_record_recycle_item_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:text="日期: 2017 / 11 / 10"
+        android:layout_below="@+id/detail_record_recycle_item_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <Button
+            android:padding="5dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/detail_record_recycle_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/message_button_style"
+            android:text="下 載"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/detail_record_recycle_item_content" />
+
+    <TextView
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        android:id="@+id/detail_record_recycle_item_date"
+        android:layout_below="@+id/detail_record_recycle_item_button"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:background="#7b0006"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</RelativeLayout>

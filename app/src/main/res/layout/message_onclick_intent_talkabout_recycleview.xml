@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_parent"
+    android:background="@drawable/message_background5"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/message_onclick_intent_talkabout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/home_setting_name"
+        android:background="@drawable/message_background5">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/message_talk_recycle_button"
+        android:layout_height="match_parent"
+
+        android:id="@+id/message_talk_recycle"
+        android:layout_below="@+id/message_onclick_intent_talkabout_toolbar"
+        android:theme="@style/AppTheme">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/refresh_layout"
+            android:scrollbars="vertical"
+            >
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.RecyclerView
+            android:theme="@style/AppTheme"
+            android:id="@+id/message_onclick_intent_talkabout_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            app:backgroundTint="@color/myfabcolor"
+            android:id="@+id/message_onclick_intent_talkabout_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_message_send_fab3"
+
+            />
+
+    </FrameLayout>
+
+
+
+            <EditText
+                android:layout_alignParentBottom="true"
+                android:id="@+id/message_edit_recycle_edit"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:layout_toLeftOf="@+id/message_talk_recycle_button"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+
+                android:layout_alignParentBottom="true"
+                android:text="送出"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/message_talk_recycle_button"
+                android:textColor="#000000"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>

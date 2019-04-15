@@ -1,0 +1,64 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/refresh_layout"
+            android:scrollbars="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:theme="@style/AppTheme"
+                android:id="@+id/Anouncement_RecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+
+        android:id="@+id/Annouce_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="30dp"
+        fab:fab_labelsPosition="left"
+        fab:fab_addButtonColorNormal="@color/myfabcolor"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_icon="@drawable/ic_fab_button2"
+        >
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_2"
+            fab:fab_colorNormal="@color/myfabcolor"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/ic_fab_button2"
+            fab:fab_title="新增公告"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

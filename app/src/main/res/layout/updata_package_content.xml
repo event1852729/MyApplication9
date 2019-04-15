@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/upcpackage_item_contentToolbat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="修改包裹"
+        android:background="#415266">
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_below="@+id/upcpackage_item_contentToolbat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/upcpackage_item_contentToolbat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.CardView
+            card_view:cardCornerRadius="16dp"
+            android:id="@+id/upcpackage_rectcle_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            card_view:cardElevation="4dp"
+            card_view:elevation="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:text="   包裹資料"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/upcpackage_recycle_packagetoRightText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="#595959"
+                    android:layout_below="@id/upcpackage_recycle_packagetoRightText"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/upcpackage_recycle_item_div1" />
+
+                <TextView
+                    android:layout_below="@+id/upcpackage_recycle_item_div1"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="狀態 : "
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/upcpackage_recycle_item_staus_Stext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <Spinner
+                    android:id="@+id/update_package_spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/upcpackage_recycle_item_staus_Stext"
+                    android:layout_below="@+id/upcpackage_recycle_item_div1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                </Spinner>
+
+
+
+
+
+                <TextView
+                    android:layout_below="@+id/upcpackage_recycle_item_staus_Stext"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="編號 : "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/upcpackage_recycle_item_numberSID_Stext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/upcpackage_recycle_item_staus_Stext"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="F129"
+                    android:layout_toRightOf="@+id/upcpackage_recycle_item_numberSID_Stext"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/upcpackage_recycle_item_numberID_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_below="@+id/upcpackage_recycle_item_numberID_text_text"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="住戶 : "
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/upcpackage_recycle_item_numberNameSID_Stext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_below="@+id/upcpackage_recycle_item_numberID_text_text"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="A棟-1F-13"
+                    android:layout_toRightOf="@+id/upcpackage_recycle_item_numberNameSID_Stext"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/upcpackage_recycle_item_numberName_text_Edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="#595959"
+                    android:layout_below="@id/upcpackage_recycle_item_numberName_text_Edit"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/upcpackage_recycle_item_div2" />
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/upCpackage_recycle_item_Button_addupdata"
+                    android:layout_below="@+id/upcpackage_recycle_item_div2"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:text="2017/02/19 10:00:23"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/upcpackage_recycle_item_Time_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_below="@id/upcpackage_recycle_item_div2"
+                    android:id="@+id/upCpackage_recycle_item_Button_addupdata"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text=" 送達日期 : "
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/updata_package_imageview"
+            android:src="@mipmap/home_picture3"
+            android:layout_below="@+id/upcpackage_rectcle_card_view"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="200dp" />
+
+        <Button
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:layout_below="@id/updata_package_imageview"
+            android:id="@+id/updata_package_Button_"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="#bc0000"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" 修改"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

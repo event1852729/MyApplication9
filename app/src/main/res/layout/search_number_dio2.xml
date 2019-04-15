@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#630101"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/add_announcement_toolbar_new"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="住戶管理"
+        android:background="#630101"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/add_detail_text"
+        android:orientation="horizontal"
+        android:id="@+id/add_detail_buttonTochange"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/add_record_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_button_style"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="主委交接"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/add_record_button2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/message_button"
+            android:gravity="center"
+            android:text="刪除住戶"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <EditText
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/serach_package_dio"
+            android:maxLength="30"
+            android:hint="搜尋住戶" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#ffffff"
+        android:id="@+id/search_package_recycle_dio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

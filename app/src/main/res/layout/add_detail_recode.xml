@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/detail_recycle_item_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="新增社區紀錄"
+        android:background="#415266"></android.support.v7.widget.Toolbar>
+
+
+
+    <ImageView
+        android:padding="10dp"
+        android:src="@drawable/ic_announce_picture"
+        android:id="@+id/update_dicuss_image"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/detail_recycle_item_toolbar"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#6e6e6e"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/update_dicuss_image"
+        android:layout_below="@+id/detail_recycle_item_toolbar"
+        android:id="@+id/update_dicuss_numbername"
+        android:text="管理者 "
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+
+    <TextView
+        android:id="@+id/add_detail_text2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:hint="請選擇新增類別"
+        android:layout_below="@+id/update_dicuss_numbername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_marginLeft="15dp"
+        android:theme="@style/toolBar4"
+        android:layout_below="@+id/add_detail_text2"
+        android:id="@+id/detail_record_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+
+    <EditText
+        android:id="@+id/detail_recycle_date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:hint="內容"
+        android:layout_below="@+id/detail_record_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#949494"
+        android:layout_below="@id/detail_recycle_date"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/detail_recycle_item_div" />
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/add_detail_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:hint="檔案:"
+        android:visibility="invisible"
+        android:layout_below="@+id/detail_recycle_item_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_below="@+id/add_detail_text"
+        android:orientation="horizontal"
+        android:id="@+id/add_detail_buttonTochange"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/add_record_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_button_style"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="選擇檔案"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/add_record_button2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/message_button"
+            android:gravity="center"
+            android:text="新 增"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

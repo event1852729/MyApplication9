@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <android.support.v7.widget.CardView
+        card_view:cardCornerRadius="16dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/package_rectcle_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        card_view:cardElevation="4dp"
+        card_view:elevation="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                card_view:srcCompat="@drawable/ggyy" />
+
+            <TextView
+                android:id="@+id/facility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="圖書館"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/package_recycle_item_div1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/image"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#595959" />
+
+            <TextView
+                android:id="@+id/reserv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:text="申請人 : "
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/reserv_person"
+                android:layout_below="@+id/idnumber"
+                android:text="A棟1號1樓"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/reserv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reserv_person"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="申請日期 : "
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reserv_person"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/reserv_date"
+                android:text="2017/02/02"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/reserv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reserv_date"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="申請使用時間 : "
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/reserv_time"
+                android:layout_alignBottom="@+id/reserv_time"
+                android:layout_toEndOf="@+id/reserv_time"
+                android:text="12:00"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <View
+                android:id="@+id/package_recycle_item_div2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@+id/textView5"
+                android:layout_alignEnd="@+id/package_recycle_item_div1"
+                android:layout_alignStart="@+id/package_recycle_item_div1"
+                android:layout_marginBottom="10dp"
+                android:background="#595959" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/package_recycle_item_div2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:text="2017-10-29 19:26:00"
+                android:textColor="#595959"
+                android:textSize="15sp"
+                android:id="@+id/textView5" />
+
+            <Button
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/package_recycle_item_div1"
+                android:layout_below="@+id/idnumber"
+                android:background="#0514b7"
+                android:text="通過"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pass"
+                android:layout_below="@+id/date"
+                android:background="#b90000"
+                android:text="不通過"
+                android:textSize="18sp"
+                android:id="@+id/nopass"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO."
+                android:textSize="15sp"
+                android:layout_below="@id/package_recycle_item_div1"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/number"
+                android:textColor="#f50000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:layout_marginTop="3dp"
+                android:textSize="15sp"
+                android:textColor="#f50000"
+                android:layout_toRightOf="@+id/number"
+                android:layout_below="@id/package_recycle_item_div1"
+                android:id="@+id/idnumber"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/package_recycle_item_div1"
+                android:layout_alignEnd="@+id/textView5"
+                android:text="未處理"
+                android:textColor="#af3302"
+                android:id="@+id/status"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申請人數 : "
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_below="@id/reserv_time"
+                android:layout_alignStart="@id/reserv_time"
+                android:id="@+id/people"
+                android:layout_marginTop="3dp"
+                />
+
+            <Button
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/pass"
+                android:layout_toEndOf="@+id/pass"
+                android:visibility="invisible" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/memberid"
+                android:visibility="invisible"
+                />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

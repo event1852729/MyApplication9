@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/add_announcement_toolbar_new"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="住戶管理"
+        android:background="#415266"></android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/add_announcement_class"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/add_ann_lly"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#6e6e6e"
+            android:layout_below="@+id/add_announcement_toolbar_new"
+            android:id="@+id/add_announcement_title_new"
+            android:text="標題 : "
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/add_announcement_title_newtext"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:hint="內容"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/message_send_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#949494"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/message_send_div" />
+
+        <EditText
+            android:id="@+id/add_announcement_content_newtext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:hint="公告內容"
+            android:layout_below="@+id/message_send_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#949494"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/message_send_div2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/add_annoounce_button"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/message_button_style"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="選擇檔案"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

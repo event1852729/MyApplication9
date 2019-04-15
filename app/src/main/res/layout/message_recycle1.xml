@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <!--<com.getbase.floatingactionbutton.FloatingActionsMenu-->
+        <!--app:layout_behavior="com.example.user.myapplication.ScrollAwareFABBehavior"-->
+        <!--android:id="@+id/Annouce_fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_margin="30dp"-->
+        <!--fab:fab_labelsPosition="left"-->
+        <!--fab:fab_addButtonColorNormal="@color/myfabcolor"-->
+        <!--fab:fab_labelStyle="@style/menu_labels_style"-->
+        <!--fab:fab_icon="@drawable/ic_fab_button2"-->
+        <!--&gt;-->
+
+
+
+        <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/package_fab2"-->
+            <!--fab:fab_colorNormal="@color/myfabcolor"-->
+            <!--fab:fab_size="mini"-->
+            <!--fab:fab_icon="@drawable/ic_search4"-->
+            <!--fab:fab_title="搜尋包裹"/>-->
+
+        <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/messageView_fab"-->
+            <!--fab:fab_colorNormal="@color/myfabcolor"-->
+            <!--fab:fab_size="mini"-->
+            <!--fab:fab_icon="@drawable/ic_fab_button2"-->
+            <!--fab:fab_title="寄信"/>-->
+
+    <!--</com.getbase.floatingactionbutton.FloatingActionsMenu>-->
+
+
+
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--app:layout_behavior="com.example.user.myapplication.ScrollAwareFABBehaviorDefault"-->
+        <!--android:id="@+id/messageView_fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_margin="30dp"-->
+        <!--android:src="@drawable/ic_fab_announcement"-->
+
+        <!--/>-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/refresh_layout"
+        android:scrollbars="vertical"
+        >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_RecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/message_fabmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="30dp"
+        fab:fab_labelsPosition="left"
+        fab:fab_addButtonColorNormal="@color/myfabcolor"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_icon="@drawable/ic_fab_button2"
+        >
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_fab_1"
+            fab:fab_colorNormal="@color/myfabcolor"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/ic_search4"
+            fab:fab_title="搜尋信件"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageView_fab"
+            fab:fab_colorNormal="@color/myfabcolor"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/ic_mail_button3"
+            fab:fab_title="寄信"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

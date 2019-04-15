@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:text="卡西歐"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/apply_comunity_numbername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="A棟1號1樓"
+        android:textSize="15sp"
+        android:textColor="#585858"
+        android:id="@+id/apply_comunity_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_comunity_numbername"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="2016.16.23"
+        android:textSize="15sp"
+        android:textColor="#585858"
+        android:id="@+id/apply_comunity_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_comunity_content"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="0970727715"
+        android:textSize="15sp"
+        android:textColor="#585858"
+        android:id="@+id/apply_comunity_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_comunity_address"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="賣靠北"
+        android:textSize="15sp"
+        android:textColor="#585858"
+        android:id="@+id/apply_comunity_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_comunity_phone"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/apply_comunity_date"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/apply_comunity_button"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/apply_button"
+            android:text="通 過"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/nonagree"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/apply_button2"
+            android:text="不 通 過"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/apply_comunity_button1"
+        android:textColor="#000000"
+        android:text="通過"
+        android:layout_width="0sp"
+        android:layout_height="0sp" />
+
+    <Button
+        android:id="@+id/apply_comunity_button2"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="通過"
+        android:textColor="#000000"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    >
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/package_rectcle_card_view"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="50dp"
+            card_view:cardElevation="60dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:elevation="14dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="34dp"
+                    android:src="@drawable/fix_image" />
+
+                <TextView
+                    android:id="@+id/application"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@+id/image"
+                    android:text="維修申請"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/find_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/image"
+                    android:layout_below="@+id/image"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:text="發現地點 : "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/find_place"
+                    android:layout_below="@+id/find_place"
+                    android:hint="請輸入發生地點(最多10個字)"
+                    android:maxLength="10"
+                    android:textColor="#a30000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/find_place"
+                    android:layout_below="@+id/place"
+                    android:text="詳述 : "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/detail"
+                    android:layout_below="@+id/detail"
+                    android:ems="10"
+                    android:hint="請說明詳細(最多30個字)"
+                    android:inputType="textMultiLine"
+                    android:maxLength="30"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText2"
+                    android:layout_marginTop="64dp"
+                    android:background="#790000"></View>
+
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/picture"
+                    android:layout_toEndOf="@+id/editText2"
+                    android:background="#000000"
+                    android:text="送  出"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="50dp"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/find_place"
+                    android:layout_below="@+id/picture"
+                    android:layout_marginTop="50dp"
+                    android:background="#000000"
+                    android:text=" + 選擇照片"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/line"
+                    android:layout_marginTop="32dp" />
+
+            </RelativeLayout>
+
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

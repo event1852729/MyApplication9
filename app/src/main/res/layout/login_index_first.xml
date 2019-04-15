@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="40sp"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#8ca1ff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_index_first_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="GO!~~~社即 "
+        />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/add_home_photo_toolbar_new"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="新增相片"
+        android:background="#415266"></android.support.v7.widget.Toolbar>
+
+    <Button
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="選擇圖片"
+        android:id="@+id/add_home_photo_button"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/photo_button"
+        />
+    <Button
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新增照片"
+        android:id="@+id/add_home_photo_button2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/photo_button2"
+        />
+
+    <ImageView
+        android:id="@+id/add_home_photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+
+
+</LinearLayout>

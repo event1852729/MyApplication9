@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/sign_clear"
+        android:icon="@drawable/ic_before"
+        android:title="清除" />
+
+    <item
+        android:id="@+id/sign_bold"
+        android:icon="@drawable/ic_dicuss_navgation_reply"
+        android:title="加粗" />
+
+    <item
+        android:id="@+id/sign_save"
+        android:icon="@drawable/ic_dicuss_navgation_talk"
+        android:title="簽收" />
+
+
+</menu>

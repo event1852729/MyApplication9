@@ -1,0 +1,17 @@
+<resources>
+    <string name="home_setting_name">設定</string>
+    <string name="Announcement_cotent">文章內容</string>
+    <string name="home_notice_name">通知</string>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="drawer_open">Drawer opened</string>
+    <string name="drawer_close">Drawer closed</string>
+    <string name="add_announcement">"新增公告"</string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

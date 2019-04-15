@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.shot.community.go.DetailRecord_Fragments">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/detail_lly"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <Button
+                android:id="@+id/dicuss_record_button1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/message_button_style"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="社 區 紀 錄"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/dicuss_record_button2"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/dicuss_record_button2"
+                android:background="@drawable/message_button"
+                android:gravity="center"
+                android:text="維 修 紀 錄"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/dicuss_record_button3"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/dicuss_record_button3"
+                android:background="@drawable/message_button"
+                android:gravity="center"
+                android:text="預 約 紀 錄"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    <View
+        android:layout_below="@+id/detail_lly"
+        android:id="@+id/detail_app_recycle_div"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#595959" />
+
+
+    <android.support.v4.view.ViewPager
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/detail_app_recycle_div"
+        android:id="@+id/detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

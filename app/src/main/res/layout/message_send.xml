@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/message_send_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="寫信"
+        android:background="#415266"></android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#313131"
+        android:layout_below="@+id/message_send_toolbar"
+        android:id="@+id/message_sendname"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="收件人"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/message_button_style"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/message_sendname"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/message_sendButton"
+        android:text="選擇收件人"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+     />
+
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#949494"
+        android:layout_below="@id/message_sendButton"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/message_send_div" />
+
+    <EditText
+        android:id="@+id/message_sendedittext_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:hint="信件內容"
+        android:layout_below="@+id/message_send_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:theme="@style/toolBar4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        app:title="簽收"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/toolBar4"
+        android:id="@+id/packge_sign_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        android:background="#415266">
+    </android.support.v7.widget.Toolbar>
+
+    <com.shot.community.go.Package_calss.PaintView
+        android:theme="@style/toolBar4"
+        android:layout_below="@+id/packge_sign_toolbar"
+        android:id="@+id/paintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/sign_navigation_content_view"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        app:itemTextColor="#666666"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:itemIconTint="#666666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:menu="@menu/sign_navgation_menu"
+        >
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

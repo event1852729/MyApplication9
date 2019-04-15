@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/AnnounceTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="#666666"
+                android:textSize="17sp"
+                 />
+
+            <Button
+                android:layout_marginLeft="25dp"
+                android:layout_alignTop="@+id/Announce_date"
+                android:layout_below="@+id/AnnounceTitles"
+                android:background="#d49c87"
+                android:textColor="#e2e2e2"
+                android:text="社區活動"
+                android:textSize="15sp"
+                android:id="@+id/announce_classbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+
+
+            <TextView
+                android:id="@+id/Announce_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AnnounceTitles"
+                android:layout_toRightOf="@+id/announce_classbutton"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:textColor="#a1a1a1" />
+
+            <Button
+                android:visibility="invisible"
+                android:background="@drawable/ic_announcement_recylce_item_image"
+                android:id="@+id/announcement_button_holder"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/Announce_date" />
+            <Button
+                android:layout_alignBaseline="@+id/Announce_date"
+                android:background="@drawable/ic_managet_button_3"
+                android:id="@+id/announcement_button"
+                android:textSize="0sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <Button
+                android:visibility="invisible"
+                android:background="@drawable/ic_announcement_recylce_item_image"
+                android:id="@+id/announcement_button_holder1"
+                android:textSize="0sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <Button
+                android:visibility="invisible"
+                android:background="@drawable/ic_announcement_recylce_item_image"
+                android:id="@+id/announcement_button_holder2"
+                android:textSize="0sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <Button
+                android:visibility="invisible"
+                android:background="@drawable/ic_announcement_recylce_item_image"
+                android:id="@+id/announcement_button_holder3"
+                android:textSize="0sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

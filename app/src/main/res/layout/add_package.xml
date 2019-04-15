@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/add_package_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="新增包裹資料"
+        android:background="#415266">
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <EditText
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:hint="住戶"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:background="@null"
+        android:id="@+id/add_package_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_package_toolbar"
+        />
+
+    <Button
+       android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/select_number_button"
+        android:layout_below="@id/add_package_title"
+        android:background="@drawable/message_button_style"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="選擇住戶"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        />
+
+
+    <View
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/select_number_button"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#949494"
+        android:layout_marginBottom="2dp"
+
+        android:id="@+id/message_send_div2" />
+
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#414141"
+        android:text="包裹狀態 : "
+        android:id="@+id/add_package_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_send_div2"
+        />
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/add_package_Text2"
+        android:id="@+id/add_package_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_send_div2"
+        />
+
+    <View
+
+        android:layout_below="@+id/add_package_content"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#949494"
+        android:layout_marginBottom="2dp"
+
+        android:id="@+id/message_send_div" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_below="@+id/message_send_div"
+        android:id="@+id/buttongroip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="5dp"
+            android:background="@drawable/button_rounde5"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選擇圖片"
+            android:id="@+id/buttonSelect"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:layout_margin="5dp"
+            android:background="@drawable/button_rounde5"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:id="@+id/buttontakepicture"
+            android:layout_alignParentTop="true" />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/buttongroip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+
+
+</RelativeLayout>

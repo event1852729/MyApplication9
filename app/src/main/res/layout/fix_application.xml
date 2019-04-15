@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/fix_backround"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/cpackage_item_contentToolbat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="#ffffff"
+        app:title="維修紀錄"
+        android:background="#415266">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cpackage_item_contentToolbat"
+        >
+
+    <android.support.v7.widget.CardView
+        card_view:cardCornerRadius="50dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/package_rectcle_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:elevation="14dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardPreventCornerOverlap="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cpackage_item_contentToolbat"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cpackage_item_contentToolbat"
+            >
+
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="40dp"
+                android:text="發生地點 : "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/place"
+                android:maxLength="10"
+                android:text="幹幹幹幹幹幹幹幹幹幹"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/place"
+                android:layout_below="@+id/place"
+                android:layout_marginTop="20dp"
+                android:text="詳述 : "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail"
+                android:layout_toRightOf="@+id/detail"
+                android:hint="
+      "
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/detail"
+                android:layout_below="@+id/detail_text"
+                android:layout_marginTop="5dp"
+                android:text="申請人 : "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_text"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ID"
+                android:text="A動1號1樓"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:id="@+id/idnum"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/fixphone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                card_view:srcCompat="@mipmap/homepicture" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/ID"
+                android:layout_marginTop="10dp"
+                android:background="#a72d2d">
+            </View>
+
+            <TextView
+                android:id="@+id/fixpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/place"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="15dp"
+                android:text="負責維修人員 : "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/fixpeople"
+                android:hint="請輸入維修人員"
+                android:textColor="#a90000"
+                android:maxLength="5"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/fixphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/place"
+                android:layout_below="@+id/fixpeople"
+                android:layout_marginTop="15dp"
+                android:text="維修人員電話 : "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fixpeople"
+                android:layout_toRightOf="@+id/fixphone"
+                android:ems="10"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:textColor="#a90000"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignEnd="@+id/image"
+                android:layout_below="@+id/image"
+                android:background="@drawable/fix_button"
+                android:text="通過"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/agree"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <Button
+                android:id="@+id/nonagree"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignStart="@+id/image"
+                android:layout_below="@+id/image"
+                android:background="@drawable/facility_test_button"
+                android:text="不通過"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/place"
+                android:layout_marginTop="10dp"
+                android:text="NO.FX001"
+                android:textColor="#ae0000"
+                android:textSize="20dp"
+                android:id="@+id/fixid"
+                />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="20dp"
+        android:background="#9f0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/com_title"
+            android:textStyle="bold"
+            android:id="@+id/passord_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/passord"
+            android:cacheColorHint="#000000"
+            android:hint="請點選並輸入啟動碼"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

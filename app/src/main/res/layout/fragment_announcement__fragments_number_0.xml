@@ -1,0 +1,37 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/refresh_layout"
+            android:scrollbars="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:theme="@style/AppTheme"
+                android:id="@+id/Anouncement_RecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

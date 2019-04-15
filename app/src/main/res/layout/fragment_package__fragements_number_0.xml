@@ -1,0 +1,123 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <HorizontalScrollView
+
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:id="@+id/package_hs"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/package_lly"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+
+                                <Button
+                                    android:id="@+id/package_fragment_button1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/message_button_style"
+                                    android:gravity="center"
+                                    android:text="待 領 取"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/package_fragment_button2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@id/dicuss_record_button2"
+                                    android:background="@drawable/message_button"
+                                    android:gravity="center"
+                                    android:text="已 領 取"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/package_fragment_button3"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@id/dicuss_record_button3"
+                                    android:background="@drawable/message_button"
+                                    android:gravity="center"
+                                    android:text="待 退 貨"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16sp" />
+                                <Button
+                                    android:id="@+id/package_fragment_button4"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@id/dicuss_record_button3"
+                                    android:background="@drawable/message_button"
+                                    android:gravity="center"
+                                    android:text="已 退 貨"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+
+                <!-- TODO: Update blank fragment layout -->
+                <View
+                    android:id="@+id/detail_app_recycle_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/package_hs"
+
+                    android:background="#595959" />
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/refresh_layout"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/detail_app_recycle_div"
+                    >
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/detail_app_recycle_div"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:theme="@style/AppTheme"
+                    android:id="@+id/package_RecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

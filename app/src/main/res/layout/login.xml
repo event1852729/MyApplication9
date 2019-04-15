@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context="com.shot.community.go.login_index"
+    >
+
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#8ca1ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_title"
+        android:text="GO!~~~社即 "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:layout_below="@+id/com_title"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7b7b7b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_title1"
+        android:text="加入社區或創建社區即享社區e化服務"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_below="@+id/com_title1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7b7b7b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_title2"
+        android:text="請選擇下列功能功能:"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/com_title2"
+        android:orientation="vertical"
+        android:id="@+id/login_lly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:paddingLeft="15dp"
+            android:paddingRight="35dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/creat_comunity_serachbutton"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/login_button"
+            android:background="@drawable/button_rounde"
+            android:text="加入社區"
+            android:textSize="20sp" />
+
+        <Button
+            android:paddingLeft="15dp"
+            android:paddingRight="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:id="@+id/forget_passord"
+            android:text="創建社區"
+            android:textSize="20sp"
+            android:background="@drawable/button_rounde4"
+            android:layout_below="@+id/creat_comunity_serachbutton"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/login_lly2"
+        android:id="@+id/login_app_div2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
+        android:background="#cacaca" />
+
+
+
+
+
+    <Button
+        android:paddingLeft="15dp"
+        android:paddingRight="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:id="@+id/login_button"
+        android:text="啟動碼開通"
+        android:background="@drawable/button_rounde3"
+        android:layout_below="@+id/login_button2" />
+    <Button
+        android:paddingLeft="15dp"
+        android:paddingRight="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:id="@+id/login_button2"
+        android:text="用戶登入"
+        android:background="@drawable/button_rounde2"
+        android:layout_below="@+id/login_app_div2" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#2792c4"
+        android:text="忘記啟動碼 ? "
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/forget"
+        />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#2792c4"
+        android:text="清空"
+        android:layout_toLeftOf="@+id/forget"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/forget1"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

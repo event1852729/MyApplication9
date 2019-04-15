@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#606060"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_facility"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#415266"
+        android:theme="@style/toolBar3"
+        app:title="公共設施預約"
+        app:titleTextColor="@android:color/white">
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/package_rectcle_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/toolbar_facility"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        card_view:cardBackgroundColor="#d4d3d3"
+        card_view:cardCornerRadius="50dp"
+        card_view:cardElevation="4dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:elevation="14dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/reserv_date"
+                android:layout_alignBottom="@+id/reserv_date"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/reserv_date"
+                android:text="請選擇日期"
+                android:textColor="#000000"
+                android:background="@drawable/discuss_report_button"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/reserv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="37dp"
+                android:text="預約日期 : "
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/reserv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/reserv_date"
+                android:layout_marginTop="25dp"
+                android:text="預約時段 : "
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/reserv_time"
+                android:layout_marginTop="15dp"></Spinner>
+
+            <TextView
+                android:id="@+id/waring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/reserv_date"
+                android:layout_below="@+id/spinner_time"
+                android:layout_marginTop="10dp"
+                android:text="注意! 時段以一小時為單位 , 一次只能預約一小時"
+                android:textColor="#a60000" />
+
+            <TextView
+                android:id="@+id/reserv_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/waring"
+                android:layout_marginTop="25dp"
+                android:text="預約人數 : "
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/spinner_people"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/reserv_people"
+                android:layout_marginTop="15dp">
+            </Spinner>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/spinner_people"
+                android:layout_marginTop="25dp"
+                android:background="#00118e">
+            </View>
+
+            <TextView
+                android:id="@+id/nameid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="20dp"
+                android:text="設施編號 : 5"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/nameid"
+                android:layout_marginTop="20dp"
+                android:text="設施名稱 : 圖書館"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button_reserve"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignTop="@+id/nameid"
+                android:layout_marginStart="60dp"
+                android:layout_toEndOf="@+id/name"
+                android:background="@drawable/facility_test_button"
+                android:text="預約"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/reserv_date"
+                android:layout_below="@+id/reserv_date"
+                android:text="注意! 晚上00:00分後 , 則不能預約當日的設施"
+                android:textColor="#b10000"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

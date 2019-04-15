@@ -1,0 +1,23 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shot.community.go.MainActivity">
+    <!--<item-->
+        <!--android:icon="@mipmap/setting"-->
+        <!--android:textSize="12dp"-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+    <item android:id="@+id/add_pacakage_send"
+        android:title="新增"
+        android:textColor="#ffffff"
+        android:itemBackground="#ffffff"
+        android:orderInCategory="80"
+        app:showAsAction="always" />
+
+
+
+</menu>

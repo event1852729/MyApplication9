@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shot.community.go.picture_Fragment_view.Tab1">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/home_picture2" />
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="杰倫來社區唷  地點在大庭院"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

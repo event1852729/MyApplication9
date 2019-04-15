@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/updataAnnouncement_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="編輯文章"
+        android:background="#415266">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="標題:"
+        android:layout_below="@+id/updataAnnouncement_toolbar"
+        android:id="@+id/updataAnnouncement_Titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ac0404"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/announcement_updatas_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/updataAnnouncement_Titles"
+        />
+    <TextView
+        android:text="內容:"
+        android:layout_below="@+id/announcement_updatas_edittext"
+        android:id="@+id/updataAnnouncement_Contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <EditText
+    android:id="@+id/announcement_updatas_edittext2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:layout_below="@+id/updataAnnouncement_Contents"
+    />
+
+    <Button
+        android:textStyle="normal"
+        android:layout_below="@id/announcement_updatas_edittext2"
+        android:id="@+id/announcement_updatas_edittext_button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_rounde3"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+
+</RelativeLayout>

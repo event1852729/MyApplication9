@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/add_dicuss_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="新增討論區文章"
+        android:background="#415266"></android.support.v7.widget.Toolbar>
+
+
+
+    <ImageView
+        android:padding="10dp"
+        android:src="@drawable/ic_announce_picture"
+        android:id="@+id/add_dicuss_image"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/add_dicuss_toolbar"
+        android:layout_height="50dp"
+       />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#6e6e6e"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/add_dicuss_image"
+        android:layout_below="@+id/add_dicuss_toolbar"
+        android:id="@+id/add_dicuss_numbername_Text"
+        android:text="發文人 : "
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+
+
+    <EditText
+        android:id="@+id/add_dicuss_edittext_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:hint="標題"
+        android:layout_below="@+id/add_dicuss_numbername_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#949494"
+        android:layout_below="@id/add_dicuss_edittext_title"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/add_dicuss_div" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="內容 : "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/add_dicuss_div"
+        android:id="@+id/text"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:id="@+id/add_dicuss_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:hint="供討論社區事務，禁止使用不雅用詞與個人訊息內容"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

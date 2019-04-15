@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/toolBar3"
+        android:id="@+id/message_record_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="新增公共設施"
+        android:background="#415266">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_record_toolbar"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:text="新增公共設施名稱 : "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_name"
+            android:hint="設施名稱"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:maxLength="6"
+            />
+
+        <TextView
+            android:id="@+id/add_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_status"
+            android:layout_marginTop="15dp"
+            android:text="設定設施公休日 : "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner_date"
+            android:layout_below="@+id/add_date"
+            android:layout_marginTop="5dp"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設定開放時間 : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/limit"
+            android:layout_marginTop="5dp"
+            android:id="@+id/opentime"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner_opentime"
+            android:layout_below="@+id/opentime"
+            android:layout_marginTop="5dp"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設定關閉時間"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/closetime"
+            android:layout_below="@+id/spinner_opentime"
+            android:layout_marginTop="5dp"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner_closetime"
+            android:layout_below="@+id/closetime"
+            android:layout_marginTop="5dp"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設定開放人數 : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/limit"
+            android:layout_below="@+id/add_name"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="請輸入開放人數"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/limit"
+            android:layout_below="@+id/add_name"
+            android:layout_marginTop="5dp"
+            android:numeric="integer"
+            android:maxLength="2"
+            android:id="@+id/person"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設定設施狀態"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/status"
+            android:layout_below="@+id/spinner_closetime"
+            android:layout_marginTop="5dp"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner_status"
+            android:layout_below="@+id/status"
+            android:layout_marginTop="5dp"
+            >
+        </Spinner>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/sign_button"
+            android:text="送出"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

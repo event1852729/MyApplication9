@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="#ffffff"
+    >
+
+    <android.support.v7.widget.CardView
+        card_view:cardCornerRadius="16dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/package_rectcle_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:elevation="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                card_view:srcCompat="@drawable/fix_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="發生地點 : "
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/place"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="詳述 : "
+                android:layout_alignStart="@+id/place"
+                android:layout_below="@+id/place"
+                android:layout_marginTop="5dp"
+                android:id="@+id/detail"
+                />
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/time"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="17dp"
+                card_view:srcCompat="@mipmap/house" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申請人 : "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_below="@+id/time_text"
+                android:layout_alignStart="@+id/place"
+                android:layout_marginTop="5dp"
+                android:id="@+id/people"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申請時間 : "
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/detail"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@+id/place"
+                android:id="@+id/time"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="騰輝好帥..."
+                android:textColor="#03009e"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/detail"
+                android:layout_below="@+id/place"
+                android:layout_marginTop="7dp"
+                android:id="@+id/detail_text"
+                android:maxLength="4"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#03009e"
+                android:text="彥輝家..."
+                android:layout_toRightOf="@+id/place"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="13dp"
+                android:id="@+id/place_text"
+                android:maxLength="3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#03009e"
+                android:text="A棟9號9樓"
+                android:layout_below="@+id/people"
+                android:layout_marginTop="7dp"
+                android:id="@+id/id_text"
+                android:layout_alignStart="@+id/place"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/11/7 19 : 00"
+                android:textSize="15sp"
+                android:textColor="#93000a"
+                android:layout_below="@+id/time"
+                android:layout_alignStart="@+id/place"
+                android:layout_marginTop="7dp"
+                android:id="@+id/time_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未處理"
+                android:textColor="#fc0202"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/status"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/time_text"
+                android:layout_alignStart="@+id/picture"
+                android:background="#000000"
+                android:text="簽收"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                android:id="@+id/write"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/write"
+                android:layout_below="@+id/time"
+                android:visibility="invisible"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/maketime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_text"
+                android:text="2017/01/11 19:00:55"
+                android:textColor="#000000"
+                android:visibility="invisible"
+                android:layout_marginTop="7dp"
+                android:layout_alignEnd="@+id/picture"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</FrameLayout>

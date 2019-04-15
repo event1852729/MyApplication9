@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="announcement_add_delete">
+        <item>刪除</item>
+        <item>修改</item>
+        ></array>
+
+</resources>

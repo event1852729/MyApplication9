@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shot.community.go.MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/home_manager_scro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <!--<com.example.user.myapplication.AutoPollRecyclerView-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:id="@+id/rv_rv_recycleView"-->
+
+
+            <!--&gt;-->
+        <!--</com.example.user.myapplication.AutoPollRecyclerView>-->
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/home_refresh_layout"
+            android:scrollbars="vertical"
+            >
+
+
+
+            <com.loonggg.rvbanner.lib.RecyclerViewBanner
+                android:id="@+id/rv_rv_recycleView"
+                android:layout_width="match_parent"
+                tools:background="@color/colorPrimaryDark"
+                android:layout_height="180dp" />
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignTop="@+id/Announce_date"
+            android:layout_below="@+id/home_refresh_layout"
+            android:background="@android:color/holo_blue_bright"
+            android:textColor="#ffffff"
+            android:text="最新公告"
+            android:textSize="14sp"
+            android:id="@+id/home_classbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignTop="@+id/Announce_date"
+           android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_refresh_layout"
+            android:background="#d49c87"
+            android:textColor="#ffffff"
+            android:text="更多"
+            android:textSize="14sp"
+            android:id="@+id/home_classbutton3"
+            android:layout_width="45dp"
+            android:layout_height="20dp" />
+
+
+
+        <!--<TextView-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_below="@+id/home_classbutton"-->
+            <!--android:id="@+id/home_new_announcement"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="32dp"-->
+            <!--android:layout_marginRight="25dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textColor="#313131"-->
+            <!--android:textSize="16sp"-->
+            <!--/>-->
+
+
+        <com.shot.community.go.AutoPollRecyclerView
+            android:layout_below="@+id/home_classbutton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/rv_rv_recycleView2"
+
+
+
+            >
+        </com.shot.community.go.AutoPollRecyclerView>
+
+
+
+        <View
+
+            android:layout_below="@+id/rv_rv_recycleView2"
+            android:id="@+id/hoem__div2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f7f7f7" />
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/hoem__div2"
+            android:id="@+id/home_relat3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_alignTop="@+id/Announce_date"
+                android:background="#d49c87"
+                android:textColor="#ffffff"
+                android:text="快 訊"
+                android:textSize="14sp"
+                android:id="@+id/home_classbutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+
+            <ImageView
+                android:id="@+id/home_mail_image"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/home_classbutton2"
+                android:src="@drawable/ic_send_to_manager_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="7日內新訊息 : 7"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/home_mail_image"
+                android:layout_below="@+id/home_classbutton2"
+                android:id="@+id/home_new_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:textColor="#484848"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:id="@+id/home_ann_image"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/home_mail_image"
+                android:src="@drawable/ic_ann_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="7日內新公告 : 6"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/home_mail_image"
+                android:layout_below="@+id/home_new_mail"
+                android:id="@+id/home_ann_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:textColor="#484848"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:id="@+id/home_package_image"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/home_ann_image"
+                android:src="@drawable/ic_package_recycle_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="7日內新包裹 : 3"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/home_mail_image"
+                android:layout_below="@+id/home_ann_mail"
+                android:id="@+id/home_package_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:textColor="#484848"
+                android:textSize="16sp"
+                />
+
+
+            <TextView
+                android:text="寄\n信\n給\n管\n理\n者"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/home_package_mail"
+                android:id="@+id/home_send_to_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#9f0800"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/home_send_to_manager_image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/home_send_to_manager"
+                android:src="@drawable/ic_home_send_to_manager"
+                android:layout_width="70dp"
+                android:layout_height="140dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="22sp"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:textColor="#737373"-->
+        <!--android:text="e化社區功能使用說明 : "-->
+        <!--android:layout_below="@id/hoem__div"-->
+        <!--android:id="@+id/use"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--/>-->
+
+        <!--<View-->
+
+            <!--android:layout_below="@+id/use"-->
+            <!--android:id="@+id/hoem__div2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:background="#eaeaea" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/home_RecycleView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/use"-->
+        <!--android:theme="@style/AppTheme"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--&gt;-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

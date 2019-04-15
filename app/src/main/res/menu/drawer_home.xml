@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_person_black_24dp"
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:title="首頁" />
+
+        <item
+            android:icon="@drawable/ic_detail1"
+            android:id="@+id/drawer_announcement"
+            android:title="社區公告" />
+
+        <item
+            android:icon="@drawable/ic_page"
+            android:id="@+id/drawer_package"
+            android:title="我的包裹" />
+
+        <item
+            android:icon="@drawable/ic_mgg"
+            android:id="@+id/drawer_mailbox"
+            android:title="我的訊息" />
+        <item
+            android:icon="@drawable/ic_detail2"
+            android:id="@+id/drawer_fux"
+            android:checked="true"
+            android:title="維修申請" />
+
+        <item
+            android:icon="@drawable/ic_aplica"
+            android:id="@+id/drawer_appoint"
+            android:title="預約公共設施" />
+
+        <item
+            android:icon="@drawable/ic_addperson"
+            android:id="@+id/drawer_dicuss"
+            android:title="社區討論區" />
+
+        <item
+            android:icon="@drawable/ic_photo"
+            android:id="@+id/drawer_photo"
+            android:title="社區相簿" />
+        <item
+            android:icon="@drawable/ic_detail3"
+            android:id="@+id/drawer_detail"
+            android:title="各項紀錄" />
+    </group>
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/detail_income_nav"
+        android:icon="@drawable/ic_detail1"
+        android:title="社區紀錄" />
+    <item
+        android:id="@+id/detail_dix_nav"
+        android:icon="@drawable/ic_detail2"
+        android:title="維修紀錄" />
+
+    <item
+        android:id="@+id/detail_dix_app_nav"
+        android:icon="@drawable/ic_detail3"
+        android:title="預約紀錄"
+        />
+
+
+
+</menu>
